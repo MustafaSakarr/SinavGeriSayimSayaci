@@ -1,0 +1,140 @@
+
+.countdown,
+p {
+  font-family: "Bangers", cursive;
+  font-size: 45px;
+
+  background-color: #dc6446;
+
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 3px;
+  padding: 10px;
+  border: 1px solid; /* box ekledik */
+  border-radius: 40rem; /* köşeleri yuvarlattık */
+  animation: shake 4s ease-in-out infinite; /* hareketli bir animasyon ekledik */
+  
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10%,
+  90% {
+    transform: translate(-5px, 0);
+  }
+  20%,
+  80% {
+    transform: translate(5px, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate(-5px, 0);
+  }
+  40%,
+  60% {
+    transform: translate(5px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+iframe {
+  border: 5px solid; /* box ekledik */
+  border-radius: 40rem; /* köşeleri yuvarlattık */
+  display: flexbox;
+ 
+}
+
+body {
+  background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg");
+background-position: center;
+  background-size: 2000px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px rgb(180, 50, 50), 0 0 25px blue, 0 0 5px darkblue;
+  font-family: "Bangers", cursive;
+  font-size: 25px;
+  color: rgb(206, 104, 32);
+ 
+}
+
+.button {
+  text-shadow: 1px 1px 2px rgb(238, 236, 236), 0 0 25px rgb(62, 62, 224), 0 0 5px rgb(217, 217, 224);
+  font-family: "Bangers", cursive;
+  
+  
+  background-color: #dc6446;
+  
+  color: #111010;
+  text-align: center;
+  
+  
+
+  transition: all 2s;
+
+  margin: 3px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 1s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: fix;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+  
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer {
+  
+  font-family: "Bangers", cursive;
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #dc6446;
+  
+  font-size: 15px;
+  
+}
+
+.container{
+display: flex;
+
+}
+
+#date {
+font-size: 25px;
+
+}
+
+
+
